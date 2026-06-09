@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://hv45t6duuhkn"]
 
 [ext_resource type="Script" uid="uid://dcskj3ji76vwq" path="res://Characters/TestCharacter/test_character.gd" id="1_md7x2"]
-[ext_resource type="PackedScene" uid="uid://btwfspf5noh0f" path="res://Characters/TestCharacter/Animations/Animated.tscn" id="2_roxm0"]
+[ext_resource type="PackedScene" uid="uid://vx1mym3jainv" path="res://Characters/TestCharacter/Animated.tscn" id="2_m665c"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_roxm0"]
 height = 4.6533203
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="TestCharacter" type="CharacterBody3D"]
 script = ExtResource("1_md7x2")
 
-[node name="Base" parent="." instance=ExtResource("2_roxm0")]
-transform = Transform3D(-4.3711387e-10, 0.01, -4.3711387e-10, 0, -4.3711387e-10, -0.01, -0.01, -4.3711387e-10, 1.9106855e-17, 0, 0, 0)
+[node name="Animated" parent="." instance=ExtResource("2_m665c")]
+transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3432617, 0)
